@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Qianfan Token Plan">
+  <defs>
+    <linearGradient id="qfqp-sail" x1="18" y1="12" x2="46" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4c8dff"/>
+      <stop offset="1" stop-color="#1c56d6"/>
+    </linearGradient>
+    <linearGradient id="qfqp-wave" x1="8" y1="46" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1c56d6"/>
+      <stop offset="1" stop-color="#0b3fa6"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="#eef4ff"/>
+  <path d="M30 12 16 33h14V12Z" fill="url(#qfqp-sail)"/>
+  <path d="M35.5 21 46 33H35.5V21Z" fill="#7fb0ff"/>
+  <path d="M8 42c5.5 0 5.5 4 11 4s5.5-4 11-4 5.5 4 11 4 5.5-4 11-4" fill="none" stroke="url(#qfqp-wave)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M8 52c5.5 0 5.5 3 11 3s5.5-3 11-3 5.5 3 11 3 5.5-3 11-3" fill="none" stroke="#9dbcff" stroke-width="3" stroke-linecap="round"/>
+</svg>

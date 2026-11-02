@@ -1,0 +1,12 @@
+# Insert the plugin into the composed profile. The console Cookie is read from
+# the DSH credential store first (BAIDU_QIANFAN_CONSOLE_COOKIE), then from the
+# read-only OpenChamber config file, so an existing setup keeps working.
+- insert:
+    - id: qianfan-token-plan
+      name: 'dsh-qianfan-token-plan'
+      config:
+        cookieRef: BAIDU_QIANFAN_CONSOLE_COOKIE
+        cookieFile: ~/.config/openchamber-qianfan-token-plan/config.json
+        providerName: baidu-qianfan-token-plan
+        pollIntervalSec: 60
+        consoleUrl: https://console.bce.baidu.com/qianfan/resource/token-plan

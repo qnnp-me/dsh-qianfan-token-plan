@@ -1,0 +1,55 @@
+{
+  "name": "dsh-qianfan-token-plan",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Shows Baidu Qianfan Token Plan quota usage (credits used, remaining balance, today's spend, expiry) in the composer dock, only for the qianfan route.",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "icon": "./icon.svg",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qnnp-me/dsh-qianfan-token-plan.git"
+  },
+  "homepage": "https://github.com/qnnp-me/dsh-qianfan-token-plan",
+  "bugs": {
+    "url": "https://github.com/qnnp-me/dsh-qianfan-token-plan/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "baidu",
+    "qianfan",
+    "token-plan",
+    "quota"
+  ]
+}

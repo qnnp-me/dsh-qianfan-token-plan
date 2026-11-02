@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "title": "Qianfan Token Plan usage",
+    "description": "Shows the Baidu Qianfan Token Plan credit percentage, remaining quota, today's spend and expiry below the composer for sessions routed through the qianfan provider; click for the quota bar, 24h trend and per-model breakdown."
+  },
+  "plan": {
+    "mini": "Mini",
+    "lite": "Lite",
+    "pro": "Pro",
+    "max": "Max"
+  }
+}

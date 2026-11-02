@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "title": "千帆 Token Plan 用量",
+    "description": "在使用百度千帆 Token Plan 路由的会话里，输入框下方显示套餐积分已用百分比、剩余额度、今日消耗与到期时间；点开可查看额度进度、24 小时趋势和按模型明细。"
+  },
+  "plan": {
+    "mini": "Mini",
+    "lite": "Lite",
+    "pro": "Pro",
+    "max": "Max"
+  }
+}
