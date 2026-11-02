@@ -26,13 +26,15 @@
 git clone https://github.com/qnnp-me/dsh-qianfan-token-plan.git
 dsh plugin --profile web add file:$PWD/dsh-qianfan-token-plan
 
-# 2) 或直接指定 git 地址（pnpm 会拉取仓库；若提示需要批准构建脚本，
-#    按提示把打印出的包名加进 profile 的 allowBuilds 再重跑）
+# 2) 或直接指定 git 地址（已实测：全新 profile 安装 → 启动正常，无需批准构建脚本）
 dsh plugin --profile web add github:qnnp-me/dsh-qianfan-token-plan
 
 # 重启一次 dsh web（bundle 层只在启动时组合）
 supervisorctl -c /path/to/supervisord.conf restart dsh-web
 ```
+
+两条路径都在 `0.2.1-rc.5` 的全新 profile 里实测过：`dsh plugin add` 会自动把包装进
+profile `package.json` 的 `dsh.profile.bundles`，重启后 Host 插件加载（`/api/qianfan-token-plan` 未鉴权返回 401 = 路由已注册）。
 
 ## 配置 Cookie
 
