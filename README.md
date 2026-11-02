@@ -22,12 +22,13 @@
 要求 DSH ≥ `0.2.1-rc.5`（在 `0.2.1-rc.5` 上实测）。
 
 ```bash
-# 直接从 GitHub 安装
-dsh plugin --profile web add github:qnnp-me/dsh-qianfan-token-plan
-
-# 或先 clone 再本地安装
+# 1) clone 后按本地包安装（已验证的路径）
 git clone https://github.com/qnnp-me/dsh-qianfan-token-plan.git
 dsh plugin --profile web add file:$PWD/dsh-qianfan-token-plan
+
+# 2) 或直接指定 git 地址（pnpm 会拉取仓库；若提示需要批准构建脚本，
+#    按提示把打印出的包名加进 profile 的 allowBuilds 再重跑）
+dsh plugin --profile web add github:qnnp-me/dsh-qianfan-token-plan
 
 # 重启一次 dsh web（bundle 层只在启动时组合）
 supervisorctl -c /path/to/supervisord.conf restart dsh-web
